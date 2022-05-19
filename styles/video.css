@@ -1,0 +1,152 @@
+p {
+  font-family: Roboto, Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+.video-title {
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  line-height: 20px;
+  pointer-events: all;
+}
+
+.video-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.video-author {
+  width: 300px;
+  color: rgb(96, 96, 96);
+  font-size: 12px;
+  margin-bottom: 4px;
+  z-index: 400;
+}
+
+.video-stats {
+  display: block;
+  color: rgb(96,96,96);
+  font-size: 12px;
+  margin-top: 0px;
+  z-index: 500;
+}
+
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.channel-picture {
+  display: inline-block;
+  width: 50px;
+  vertical-align: top;
+}
+
+.profile-picture {
+  width: 36px;
+  border-radius: 50px;
+  margin-top: 0px;
+}
+
+.video-info {
+  display: inline-block;
+  width: 200px;
+}
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 40px;
+}
+
+.video-time {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  border-radius: 2px;
+}
+
+.channel-picture-container {
+  position: relative;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.profile-picture {
+  pointer-events: all;
+}
+
+.channel-picture-container .tooltip {
+  display: flex;
+  position: relative;
+  background-color: white;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 7px;
+  font-size: 12px;
+  bottom: -5px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  font-family: Roboto, Arial;
+  border-width: 2px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+  z-index: 300;
+  width: 220px;
+}
+
+.channel-picture-container:hover .tooltip {
+  opacity: 1;
+}
+
+.profile-picture-tooltip {
+  width: 50px;
+  border-radius: 50px;
+}
+
+.video-author-tooltip {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Roboto, Arial;
+  padding-top: 5px;
+  padding-left: 60px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  display: inline-block;
+}
+
+.video-stats-tooltip {
+  color: rgb(96,96,96);
+  font-size: 12px;
+  margin-top: 30px;
+  margin-left: 9px;
+  
+}
